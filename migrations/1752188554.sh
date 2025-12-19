@@ -1,5 +1,5 @@
-echo "Update chromium.desktop to ensure we are always using wayland"
+echo "Update brave-browser.desktop to ensure we are always using wayland"
 
-xdg-settings set default-web-browser chromium.desktop
-xdg-mime default chromium.desktop x-scheme-handler/http
-xdg-mime default chromium.desktop x-scheme-handler/https
+xdg-settings set default-web-browser brave-browser.desktop
+xdg-mime default brave-browser.desktop x-scheme-handler/http
+xdg-mime default brave-browser.desktop x-scheme-handler/https
