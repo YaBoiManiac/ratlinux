@@ -1,10 +1,7 @@
 # Omarchy core package list installed via install/packaging/base.sh
 # This file is also used by the ISO builder when determining needs
 
-1password-beta
-1password-cli
 aether
-alacritty
 asdcontrol
 avahi
 bash-completion
@@ -18,10 +15,8 @@ cups
 cups-browsed
 cups-filters
 cups-pdf
-docker
-docker-buildx
-docker-compose
 dust
+discord
 evince
 exfatprogs
 expac
@@ -61,13 +56,11 @@ iwd
 jq
 kdenlive
 kvantum-qt5
-lazydocker
 lazygit
 less
 libsecret
 libyaml
 libqalculate
-libreoffice-fresh
 llvm
 localsend
 luarocks
@@ -85,8 +78,6 @@ noto-fonts-extra
 nss-mdns
 nvim
 obs-studio
-obsidian
-omarchy-chromium
 omarchy-nvim
 omarchy-walker
 pamixer
@@ -106,9 +97,7 @@ ruby
 rust
 satty
 sddm
-signal-desktop
 slurp
-spotify
 starship
 sushi
 swaybg
@@ -123,7 +112,6 @@ ttf-jetbrains-mono-nerd
 typora
 tzupdate
 ufw
-ufw-docker
 unzip
 usage
 uwsm
@@ -139,7 +127,6 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-terminal-exec
 xmlstarlet
-xournalpp
 yaru-icon-theme
 yay
 zoxide
