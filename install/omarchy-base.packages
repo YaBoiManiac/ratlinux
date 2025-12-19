@@ -49,12 +49,11 @@ hyprpicker
 hyprsunset
 imagemagick
 impala
-imv
+loupe
 inetutils
 inxi
 iwd
 jq
-kdenlive
 kvantum-qt5
 lazygit
 less
@@ -81,7 +80,6 @@ obs-studio
 omarchy-nvim
 omarchy-walker
 pamixer
-pinta
 playerctl
 plocate
 plymouth
@@ -109,7 +107,6 @@ tobi-try
 ttf-cascadia-mono-nerd
 ttf-ia-writer
 ttf-jetbrains-mono-nerd
-typora
 tzupdate
 ufw
 unzip
@@ -129,5 +126,6 @@ xdg-terminal-exec
 xmlstarlet
 yaru-icon-theme
 yay
+vlc
 zoxide
 qbittorrent
