@@ -8,8 +8,16 @@ for f in ~/.local/share/omarchy/themes/*; do ln -nfs "$f" ~/.config/omarchy/them
 
 # Set initial theme
 mkdir -p ~/.config/omarchy/current
-ln -snf ~/.config/omarchy/themes/tokyo-night ~/.config/omarchy/current/theme
-ln -snf ~/.config/omarchy/current/theme/backgrounds/1-scenery-pink-lakeside-sunset-lake-landscape-scenic-panorama-7680x3215-144.png ~/.config/omarchy/current/background
+ln -snf ~/.config/omarchy/themes/hackerman ~/.config/omarchy/current/theme
+
+# Create wallpapers directory and set default wallpaper
+mkdir -p ~/.config/hypr/wallpapers
+# Link to first available wallpaper in the directory, or create a placeholder
+if ls ~/.config/hypr/wallpapers/*.{png,jpg,jpeg} 1> /dev/null 2>&1; then
+  ln -snf "$(find ~/.config/hypr/wallpapers -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' \) | sort | head -n 1)" ~/.config/omarchy/current/background
+else
+  touch ~/.config/hypr/wallpapers/.placeholder
+fi
 
 # Set specific app links for current theme
 # ~/.config/omarchy/current/theme/neovim.lua -> ~/.config/nvim/lua/plugins/theme.lua is handled via omarchy-setup-nvim
@@ -26,3 +34,4 @@ sudo chmod a+rw /etc/chromium/policies/managed
 
 sudo mkdir -p /etc/brave/policies/managed
 sudo chmod a+rw /etc/brave/policies/managed
+ 
