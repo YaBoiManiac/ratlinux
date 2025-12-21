@@ -8,11 +8,8 @@ for f in ~/.local/share/omarchy/themes/*; do ln -nfs "$f" ~/.config/omarchy/them
 
 # Set initial theme
 mkdir -p ~/.config/omarchy/current
-ln -snf ~/.config/omarchy/themes/hackerman ~/.config/omarchy/current/theme
-
-# Create wallpapers directory and set default wallpaper
-mkdir -p ~/.config/hypr/wallpapers
-ln -snf ~/.config/hypr/wallpapers/default.png ~/.config/omarchy/current/background
+ln -snf ~/.config/omarchy/themes/arc-blueberry ~/.config/omarchy/current/theme
+ln -snf ~/.config/omarchy/current/theme/backgrounds/1.png ~/.config/omarchy/current/background
 
 # Set specific app links for current theme
 # ~/.config/omarchy/current/theme/neovim.lua -> ~/.config/nvim/lua/plugins/theme.lua is handled via omarchy-setup-nvim
@@ -29,4 +26,3 @@ sudo chmod a+rw /etc/chromium/policies/managed
 
 sudo mkdir -p /etc/brave/policies/managed
 sudo chmod a+rw /etc/brave/policies/managed
- 
