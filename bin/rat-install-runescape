@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Installing Bolt (3rd Party Runescape Launcher)..."
+omarchy-pkg-add bolt-launcher-bin
